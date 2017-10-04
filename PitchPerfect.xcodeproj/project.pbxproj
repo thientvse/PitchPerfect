@@ -13,7 +13,7 @@
 		62EB828E1F683AF30091F9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62EB828D1F683AF30091F9D4 /* Assets.xcassets */; };
 		62EB82911F683AF30091F9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62EB828F1F683AF30091F9D4 /* LaunchScreen.storyboard */; };
 		62F8D02B1F69A1DE00E9BB9E /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F8D02A1F69A1DE00E9BB9E /* PlaySoundsViewController.swift */; };
-		62FE33351F702F9F00EACCBA /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE33341F702F9F00EACCBA /* playsoundsviewcontroller-audio.swift */; };
+		62FE33371F70381100EACCBA /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE33361F70381100EACCBA /* playsoundsviewcontroller-audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		62EB82901F683AF30091F9D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62EB82921F683AF30091F9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F8D02A1F69A1DE00E9BB9E /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		62FE33341F702F9F00EACCBA /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
+		62FE33361F70381100EACCBA /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "playsoundsviewcontroller-audio.swift"; path = "../../playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				62EB828F1F683AF30091F9D4 /* LaunchScreen.storyboard */,
 				62EB82921F683AF30091F9D4 /* Info.plist */,
 				62F8D02A1F69A1DE00E9BB9E /* PlaySoundsViewController.swift */,
-				62FE33341F702F9F00EACCBA /* playsoundsviewcontroller-audio.swift */,
+				62FE33361F70381100EACCBA /* playsoundsviewcontroller-audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -102,6 +102,7 @@
 				TargetAttributes = {
 					62EB82821F683AF30091F9D4 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SCX38SQ856;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,7 +146,7 @@
 				62EB82891F683AF30091F9D4 /* RecordSoundsViewController.swift in Sources */,
 				62F8D02B1F69A1DE00E9BB9E /* PlaySoundsViewController.swift in Sources */,
 				62EB82871F683AF30091F9D4 /* AppDelegate.swift in Sources */,
-				62FE33351F702F9F00EACCBA /* playsoundsviewcontroller-audio.swift in Sources */,
+				62FE33371F70381100EACCBA /* playsoundsviewcontroller-audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +272,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SCX38SQ856;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.PitchPerfect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.pitchperfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,11 +290,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SCX38SQ856;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.PitchPerfect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udacity.pitchperfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
